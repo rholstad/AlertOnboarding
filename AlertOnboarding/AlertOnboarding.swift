@@ -43,6 +43,8 @@ open class AlertOnboarding: UIView, AlertPageViewDelegate {
     @objc open var colorPageIndicator = UIColor(red: 171/255, green: 177/255, blue: 196/255, alpha: 1.0)
     @objc open var colorCurrentPageIndicator = UIColor(red: 118/255, green: 125/255, blue: 152/255, alpha: 1.0)
     
+    @objc open var imageContentMode: UIView.ContentMode = .scaleToFill
+    
     open var heightForAlertView: CGFloat!
     open var widthForAlertView: CGFloat!
     
