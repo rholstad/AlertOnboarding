@@ -119,6 +119,9 @@ class AlertPageViewController: UIViewController, UIPageViewControllerDataSource,
         
         pageContentViewController.image.image = arrayOfAlerts[realIndex].image
         pageContentViewController.image.contentMode = alertview.imageContentMode
+        if let imageAspectRatio = alertview.imageAspectRatio {
+            pageContentViewController.setImageAspectRatio(imageAspectRatio)
+        }
         pageContentViewController.image.layer.minificationFilter = CALayerContentsFilter.trilinear
         pageContentViewController.labelMainTitle.font = alertview.fontTitleLabel
         pageContentViewController.labelMainTitle.text = arrayOfAlerts[realIndex].title
