@@ -26,7 +26,6 @@ open class AlertOnboarding: UIView, AlertPageViewDelegate {
     fileprivate var container: AlertPageViewController!
     open var background: UIView!
     
-    
     //PUBLIC VARS   ------------------------
     @objc open var colorForAlertViewBackground: UIColor = UIColor.white
     
@@ -42,6 +41,10 @@ open class AlertOnboarding: UIView, AlertPageViewDelegate {
     
     @objc open var colorPageIndicator = UIColor(red: 171/255, green: 177/255, blue: 196/255, alpha: 1.0)
     @objc open var colorCurrentPageIndicator = UIColor(red: 118/255, green: 125/255, blue: 152/255, alpha: 1.0)
+    
+    @objc open var imageContentMode: UIView.ContentMode = .scaleToFill
+    /// Defines proportion between imageView and its containerView. Default is 80% (0.8)
+    open var imageAspectRatio: CGFloat?
     
     open var heightForAlertView: CGFloat!
     open var widthForAlertView: CGFloat!

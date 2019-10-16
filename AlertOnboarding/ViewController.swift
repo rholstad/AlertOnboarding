@@ -46,7 +46,7 @@ class ViewController: UIViewController, AlertOnboardingDelegate {
          
          */
         
-        
+        self.alertView.imageContentMode = .scaleAspectFit
         self.alertView.show()
         
     }

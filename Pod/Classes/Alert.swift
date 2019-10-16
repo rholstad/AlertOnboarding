@@ -9,9 +9,9 @@
 import UIKit
 
 @objc public class Alert: NSObject {
-    var image: UIImage
-    var title: String
-    var text: String
+    public var image: UIImage
+    public var title: String
+    public var text: String
     
     @objc public init(image: UIImage, title: String, text: String) {
         self.image = image

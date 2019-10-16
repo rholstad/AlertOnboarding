@@ -12,11 +12,11 @@
 		37845A6E1D994CBA009B3734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37845A6C1D994CBA009B3734 /* Main.storyboard */; };
 		37845A701D994CBA009B3734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37845A6F1D994CBA009B3734 /* Assets.xcassets */; };
 		37845A731D994CBA009B3734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37845A711D994CBA009B3734 /* LaunchScreen.storyboard */; };
-		37845A7C1D994D65009B3734 /* AlertOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37845A7B1D994D65009B3734 /* AlertOnboarding.swift */; };
-		37845A7E1D994D87009B3734 /* AlertChildPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37845A7D1D994D87009B3734 /* AlertChildPageViewController.swift */; };
-		37845A801D994DA6009B3734 /* AlertPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37845A7F1D994DA6009B3734 /* AlertPageViewController.swift */; };
 		37845A821D994DE6009B3734 /* AlertChildPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37845A811D994DE6009B3734 /* AlertChildPageViewController.xib */; };
-		9241A9352132E40600FD8638 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9241A9342132E40600FD8638 /* Alert.swift */; };
+		568AB1512298215E00C06C37 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568AB14D2298215E00C06C37 /* Alert.swift */; };
+		568AB1522298215E00C06C37 /* AlertChildPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568AB14E2298215E00C06C37 /* AlertChildPageViewController.swift */; };
+		568AB1532298215E00C06C37 /* AlertPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568AB14F2298215E00C06C37 /* AlertPageViewController.swift */; };
+		568AB1542298215E00C06C37 /* AlertOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568AB1502298215E00C06C37 /* AlertOnboarding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +27,11 @@
 		37845A6F1D994CBA009B3734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37845A721D994CBA009B3734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37845A741D994CBA009B3734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37845A7B1D994D65009B3734 /* AlertOnboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertOnboarding.swift; sourceTree = "<group>"; };
-		37845A7D1D994D87009B3734 /* AlertChildPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertChildPageViewController.swift; sourceTree = "<group>"; };
-		37845A7F1D994DA6009B3734 /* AlertPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertPageViewController.swift; sourceTree = "<group>"; };
 		37845A811D994DE6009B3734 /* AlertChildPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertChildPageViewController.xib; sourceTree = "<group>"; };
-		9241A9342132E40600FD8638 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		568AB14D2298215E00C06C37 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		568AB14E2298215E00C06C37 /* AlertChildPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertChildPageViewController.swift; sourceTree = "<group>"; };
+		568AB14F2298215E00C06C37 /* AlertPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertPageViewController.swift; sourceTree = "<group>"; };
+		568AB1502298215E00C06C37 /* AlertOnboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertOnboarding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 		37845A671D994CBA009B3734 /* AlertOnboarding */ = {
 			isa = PBXGroup;
 			children = (
-				37845A7A1D994D51009B3734 /* Alert */,
+				568AB14C2298215E00C06C37 /* Classes */,
 				37845A681D994CBA009B3734 /* AppDelegate.swift */,
 				37845A6A1D994CBA009B3734 /* ViewController.swift */,
 				37845A6C1D994CBA009B3734 /* Main.storyboard */,
@@ -76,16 +76,17 @@
 			path = AlertOnboarding;
 			sourceTree = "<group>";
 		};
-		37845A7A1D994D51009B3734 /* Alert */ = {
+		568AB14C2298215E00C06C37 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				37845A7B1D994D65009B3734 /* AlertOnboarding.swift */,
-				9241A9342132E40600FD8638 /* Alert.swift */,
-				37845A7D1D994D87009B3734 /* AlertChildPageViewController.swift */,
-				37845A7F1D994DA6009B3734 /* AlertPageViewController.swift */,
+				568AB14D2298215E00C06C37 /* Alert.swift */,
+				568AB14E2298215E00C06C37 /* AlertChildPageViewController.swift */,
+				568AB14F2298215E00C06C37 /* AlertPageViewController.swift */,
+				568AB1502298215E00C06C37 /* AlertOnboarding.swift */,
 			);
-			name = Alert;
-			sourceTree = "<group>";
+			name = Classes;
+			path = Pod/Classes;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -161,11 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9241A9352132E40600FD8638 /* Alert.swift in Sources */,
-				37845A801D994DA6009B3734 /* AlertPageViewController.swift in Sources */,
+				568AB1532298215E00C06C37 /* AlertPageViewController.swift in Sources */,
+				568AB1542298215E00C06C37 /* AlertOnboarding.swift in Sources */,
+				568AB1512298215E00C06C37 /* Alert.swift in Sources */,
+				568AB1522298215E00C06C37 /* AlertChildPageViewController.swift in Sources */,
 				37845A6B1D994CBA009B3734 /* ViewController.swift in Sources */,
-				37845A7E1D994D87009B3734 /* AlertChildPageViewController.swift in Sources */,
-				37845A7C1D994D65009B3734 /* AlertOnboarding.swift in Sources */,
 				37845A691D994CBA009B3734 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
