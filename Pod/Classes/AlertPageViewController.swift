@@ -47,6 +47,10 @@ class AlertPageViewController: UIViewController, UIPageViewControllerDataSource,
             self.alertview.buttonBottom.setTitle(alertview.titleNextButton, for: UIControl.State())
         }
         
+        if (arrayOfAlerts.count <= 1) {
+            self.alertview.buttonBottom.setTitle(alertview.titleGotItButton, for: UIControl.State())
+        }
+        
         self.configurePageViewController()
         self.configurePageControl()
         
@@ -117,7 +121,13 @@ class AlertPageViewController: UIViewController, UIPageViewControllerDataSource,
         
         let realIndex = arrayOfAlerts.count - index - 1
         
-        pageContentViewController.image.image = arrayOfAlerts[realIndex].image
+        if let animationImages = arrayOfAlerts[realIndex].animationImages {
+            pageContentViewController.image.animationImages = animationImages
+            pageContentViewController.image.animationDuration = TimeInterval(animationImages.count) * 0.5
+            pageContentViewController.image.startAnimating()
+        } else {
+            pageContentViewController.image.image = arrayOfAlerts[realIndex].image
+        }
         pageContentViewController.image.contentMode = alertview.imageContentMode
         if let imageAspectRatio = alertview.imageAspectRatio {
             pageContentViewController.setImageAspectRatio(imageAspectRatio)
@@ -184,6 +194,7 @@ class AlertPageViewController: UIViewController, UIPageViewControllerDataSource,
         self.pageControl.numberOfPages = arrayOfAlerts.count
         self.pageControl.currentPage = 0
         self.pageControl.isEnabled = false
+        self.pageControl.isHidden = self.pageControl.numberOfPages <= 1
         
         self.configureConstraintsForPageControl()
     }
