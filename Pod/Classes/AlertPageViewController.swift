@@ -139,6 +139,7 @@ class AlertPageViewController: UIViewController, UIPageViewControllerDataSource,
         pageContentViewController.labelDescription.font = alertview.fontDescriptionLabel
         pageContentViewController.labelDescription.text = arrayOfAlerts[realIndex].text
         pageContentViewController.labelDescription.textColor = alertview.colorDescriptionLabel
+        pageContentViewController.labelDescription.scrollRangeToVisible(NSMakeRange(0, 0))
         
         return pageContentViewController
     }

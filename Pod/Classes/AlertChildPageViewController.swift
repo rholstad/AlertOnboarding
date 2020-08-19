@@ -23,6 +23,13 @@ import UIKit
         super.viewDidLoad()
     }
     
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        DispatchQueue.main.async {
+            self.labelDescription.contentOffset = .zero
+        }
+    }
+    
     override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
